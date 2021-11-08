@@ -1,4 +1,3 @@
-// We'll pre-populate this array with a couple objects just so it's not undefined if your internet connection isn't working properly.
 let url = ('https://jsonplaceholder.typicode.com/todos')
 let arrayOfTodos = []
 let ol = document.getElementById('todo-list')
@@ -23,4 +22,14 @@ let ol = document.getElementById('todo-list')
         }
 
 
+    }
+
+    const filteredTodos = () => {
+        ol.innerText = "";
+        for(let i = 0; i<arrayOfTodos.length; i++) {
+            if (arrayOfTodos[i].completed = true){
+                let li = document.createElement("li");
+                
+            }
+        }
     }
